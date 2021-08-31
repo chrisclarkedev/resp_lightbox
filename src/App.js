@@ -5,7 +5,7 @@ import Gallery from './components/Gallery';
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <h1>REACT GALLERY</h1>
       <Gallery />
     </div>
   );

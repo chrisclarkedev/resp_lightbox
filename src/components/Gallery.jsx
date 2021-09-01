@@ -7,25 +7,25 @@ const Gallery = () => {
   let data = [
     {
       id: 1,
-      imgSrc: 'Img1',
+      imgSrc: Img1,
     },
     {
       id: 2,
-      imgSrc: 'Img2',
+      imgSrc: Img2,
     },
     {
       id: 3,
-      imgSrc: 'Img3',
+      imgSrc: Img3,
     },
   ];
 
   return (
     <>
       <div className="gallery">
-        {data.map((id, index) => {
+        {data.map((item, index) => {
           return (
             <div className="pics" key={index}>
-              <img src={id.imgSrc} alt="" />
+              <img src={item.imgSrc} alt="" />
             </div>
           );
         })}

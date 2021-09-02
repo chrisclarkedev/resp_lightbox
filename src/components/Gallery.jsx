@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CancelIcon from '@material-ui/icons/Cancel';
 import Img1 from './images/car1.jpg';
 import Img2 from './images/fw1.jpg';
 import Img3 from './images/roll1.jpg';

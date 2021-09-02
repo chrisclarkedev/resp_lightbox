@@ -72,12 +72,14 @@ img {
   z-index: 999;
 }
 
+/* MODEL OPENING SETTING */
 .model.open {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
 }
 
+/* IMAGE POPUP AFTER CLICK EVENT */
 .model img {
   width: auto;
   max-width: 100%;
@@ -88,4 +90,16 @@ img {
   box-sizing: border-box;
   padding: 20px 0 20px;
   margin: 0 auto;
+}
+
+.model.open svg {
+  position: fix;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 00.4);
+  color: white;
+  cursor: pointer;
 }

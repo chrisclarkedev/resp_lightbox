@@ -77,6 +77,7 @@ const Gallery = () => {
     <>
       <div className={model ? 'model open' : 'model'} alt="">
         <img src={tempimgSrc} alt="" />
+        <CancelIcon onClick={() => setModel(false)} />
       </div>
       <div className="gallery">
         {data.map((item, index) => {

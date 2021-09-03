@@ -12,6 +12,10 @@ import Img9 from './images/car3.jpg';
 import Img10 from './images/fw3.jpg';
 import Img11 from './images/roll3.jpg';
 import Img12 from './images/ws3.jpg';
+import Img13 from './images/car4.jpg';
+import Img14 from './images/fw4.jpg';
+import Img15 from './images/roll4.jpg';
+import Img16 from './images/ws4.jpg';
 
 const Gallery = () => {
   let data = [
@@ -63,6 +67,22 @@ const Gallery = () => {
       id: 12,
       imgSrc: Img12,
     },
+    {
+      id: 13,
+      imgSrc: Img13,
+    },
+    {
+      id: 14,
+      imgSrc: Img14,
+    },
+    {
+      id: 15,
+      imgSrc: Img15,
+    },
+    {
+      id: 16,
+      imgSrc: Img16,
+    },
   ];
 
   const [model, setModel] = useState(false);
@@ -77,6 +97,8 @@ const Gallery = () => {
     <>
       <div className={model ? 'model open' : 'model'} alt="">
         <img src={tempimgSrc} alt="" />
+
+        {/* CLICK EVENT THAT CHANGES setModel TO FALSE CLOSING IT */}
         <CancelIcon onClick={() => setModel(false)} />
       </div>
       <div className="gallery">
